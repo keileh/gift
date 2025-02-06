@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>?!</title>
+    <style>
+        body {
+            background-color: #2c2c2c;
+            color: #f0f0f0;
+            font-family: 'Garamond', serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #c0392b;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .greeting {
+            background-color: rgba(255, 0, 0, 0.2);
+            border: 2px solid #c0392b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        #image-container {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            display: none;
+        }
+        img.active {
+            display: block;
+        }
+        .button {
+            background-color: #900000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #b00000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main"><div><h1>РОДНОЙ С ДУШОЙ</h1>
+    
+    <div class="greeting">
+        <h2>*:.｡. .｡.:*･゜ﾟ･*☆</h2>
+        <p>с днём рождения родная будь счастливой. ты потрясающий многосторонний человек с множеством увлечений и граней которые я уважаю и ценю и которые ты тоже должна ценить и уважать. экспериментируй пробуй ошибайся — у тебя есть вся жизнь впереди чтобы попробовать что-то новое и понять себя, чтобы открыть двери. не будь к себе критична ведь никто не полюбит и не поймёт тебя больше чем ты сама. ищи гармонию внутри и в мире а я поддержу тебя в этом</p>
+    </div>
+
+    <div class="greeting">
+        <h2>*:.｡. .｡.:*･゜ﾟ･*☆</h2>
+        <p>я тебя очень люблю и верю что ты добьёшься высот о которых даже грезить не могла. у тебя большой потенциал и крепкий стержень пусть иногда кажется что это не так. позволяй себе минуты слабости, плачь, борись, будь собой и не отказывайся от собственных чувств. смотри только вперёд даже если страшно. ты всё преодолеешь с гордо поднятой головой</p>
+    </div>
+
+    <div class="greeting">
+        <h2>*:.｡. .｡.:*･゜ﾟ･*☆</h2>
+        <p>всегда помни что ты не одна и тебе нет нужды тащить всё на себе когда ношу можно разделить с другими. ты не ломовая лошадь а человек, хрупкий и устающий, так что будь к себе благосклонна. надеюсь что будущее станет для тебя лишь приятным временем в которое ты ступишь без страхов и сожалений о прошлом, что оно принесёт тебе только успех и радость</p>
+    </div>
+
+    <div class="greeting">
+        <h2>*:.｡. .｡.:*･゜ﾟ･*☆</h2>
+        <p>я очень рада что однажды из-за своей социофобии присосалась к тебе как к единственному человеку которого я знала и который мог меня понять. я очень рада что этот случайный непонятный и принудительный мув привёл нас к долголетней крепкой дружбе где обе друг друга понимают и поддерживают. и я очень надеюсь что это не единственное твоё день рождения которое мы отметим вместе (почти) так что знай что я всегда рядом. я рада что именно с тобой рядом я росла и наблюдала в это время за твоим ростом. и я могу сказать что ты реально выросла по всем аспектам. это большой повод для гордости</p>
+    </div>
+</div>
+    <div><h1>⪩⪨</h1>
+        <div class="greeting">
+            <p>просто взгляни на эти фото и пойми насколько ты КРАСИВА и внутренне и внешне. клянусь всё время что мы общаемся я восхищаюсь твоей красотой. у тебя невероятно красивая и яркая улыбка, у тебя выразительные говорящие глаза, которые очаровывают своей лисьей хитростью, у тебя потрясающая фигура, у тебя чувство стиля, от которого у меня челюсть на полу. на каждом своём этапе ты была обновлённой, но оставалась собой</p>
+        </div>
+    <div id="image-container">
+        <img src="1.jfif" class="active">
+        <img src="2.jfif">
+        <img src="3.jfif">
+        <img src="4.jfif">
+        <img src="5.jfif">
+        <img src="6.jfif">
+        <img src="7.jfif">
+        <img src="8.jfif">
+        <img src="9.jfif">
+        <img src="10.jfif">
+        <img src="11.jfif">
+        <img src="12.jfif">
+        <img src="13.jfif">
+        <img src="14.jfif">
+        <img src="15.jfif">
+        <img src="16.jfif">
+    </div>
+    <div>
+        <button class="button" onclick="prevImage()">Предыдущее</button>
+        <button class="button" onclick="nextImage()">Следующее</button>
+    </div>
+</div></div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('#image-container img');
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.remove('active');
+                if (i === index) {
+                    img.classList.add('active');
+                }
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+    </script>
+</body>
+</html>
